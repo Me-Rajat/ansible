@@ -1,0 +1,14 @@
+-
+ name: Executing loop
+ hosts: localhost
+ vars:
+  fruits:
+  - apple
+  - banana
+  - watermelon
+  - dragon fruit
+ name: Printing fruits
+ tasks: 
+ -
+  command: echo "{{ item }}"
+  with_items: '{{ fruits }}'

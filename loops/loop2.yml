@@ -1,0 +1,16 @@
+-
+ name: Executing loop
+ hosts: localhost
+ vars:
+  packages:
+  - nodejs
+  - mongodb
+  - ksh
+  - httpd
+ name: Installing using yum module
+ tasks: 
+ -
+  yum: 
+   name: "{{ item }}"
+   state: present
+  with_items: '{{ packages }}'

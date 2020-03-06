@@ -1,0 +1,9 @@
+-
+ name: Variable-Demo1
+ hosts: localhost
+ vars:
+  var: "ab.txt"
+ tasks:
+ -
+  name: Demo1
+  command: cat /root/{{ var }}

@@ -1,0 +1,9 @@
+-
+  name: module2
+  hosts: localhost
+  tasks:
+    -
+      name: running a service
+      service: 
+        name: httpd 
+        status: started 

@@ -1,0 +1,7 @@
+-
+  name: play3
+  hosts: localhost
+  tasks: 
+    -
+      name: Execute cat command
+      command: cat /etc/hosts

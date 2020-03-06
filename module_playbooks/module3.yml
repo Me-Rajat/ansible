@@ -1,0 +1,10 @@
+-
+ name: module3
+ hosts: localhost
+ tasks:
+ -
+  name: Creating a user
+  user:
+   name: user-1
+   uid: 101
+   group: 

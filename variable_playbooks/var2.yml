@@ -1,0 +1,17 @@
+-
+ name: Var-2
+ hosts: localhost
+ vars:
+  cm: "Jaguar"
+  cn: "INDIA"
+  pf: "DevOps Engineer"
+ tasks:
+ -
+  name: My car
+  command: echo "My car is {{cm}}"
+ -
+  name: My Country
+  command: echo "My Country is {{cn}}"
+ -
+  name: My Profession
+  command: echo "I am {{pf}}"

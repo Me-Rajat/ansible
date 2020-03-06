@@ -1,0 +1,10 @@
+-
+ name: play4
+ hosts: localhost
+ tasks: 
+  -
+   name: 1st command
+   command: date
+  -
+   name: 2nd command
+   command: cat /etc/hosts

@@ -1,0 +1,22 @@
+-
+ name: Task-1
+ hosts: localhost
+ tasks:
+   - name: Add multiple Lines
+     lineinfile:
+        path: /root/Desktop/ab.txt
+        line: 'db:no'
+        state: present
+        line: "{{ item }}"
+     with_items:
+           - '   Orange'
+           - '   Apple'
+           - '   Banana'
+        
+   - name: Replace a word   
+     lineinfile:
+        path: /root/Desktop/ab.txt
+        regexp: 'db:no'
+        state: present
+        line: 'db:yes'
+      

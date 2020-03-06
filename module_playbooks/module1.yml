@@ -1,0 +1,7 @@
+-
+ name: module1
+ hosts: localhost
+ tasks:
+  - 
+   name: Running a script
+   script: /root/install.sh

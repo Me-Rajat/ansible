@@ -1,0 +1,7 @@
+-
+  name: Play2
+  hosts: localhost
+  tasks:
+   -
+    name: Executing Date command
+    command: date

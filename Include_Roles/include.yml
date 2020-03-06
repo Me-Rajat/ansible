@@ -1,0 +1,9 @@
+-
+ name: Include 
+ hosts: localhost
+ vars_files:
+  - vars.yml
+ name: demo
+ tasks: 
+ -
+   include: task.yml

@@ -1,0 +1,7 @@
+-
+ name: Executing on slave
+ hosts: all
+ tasks: 
+ -
+   name: Creating a Directory
+   command: mkdir -p /root/Desktop/MyDir

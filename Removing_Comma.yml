@@ -1,0 +1,11 @@
+-
+ name: Task-1
+ hosts: localhost
+ tasks:
+   - name: Remove last Comma
+     replace:
+      path: /root/file.txt
+      after: 'd'
+      before: ']'
+      regexp: ','
+      replace: ''
